@@ -253,6 +253,8 @@ url(../images/Imghero.jpg);
   line-height: 1.87;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+  border-radius: 4px;
+  border: none;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -306,18 +308,140 @@ pointer-events: none;
   width: 30px;
   height: 30px;
   
-  
-  
-  border: 1px solid rgba(0, 0, 0, 0.1); ;
+  border : 1px solid rgba(0, 0, 0, 0.1); ;
   border-radius: 50%;
   background-color: var(--white);
   
 }
 .pic-modal {
-  
   fill: rgba(0, 0, 0, 1);
+}
+
+.button-close:hover .pic-modal,
+.button-close:focus .pic-modal {
+  fill: var(--accent-color)
+}
+
+.modal-info {
+  
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-name {
+  padding-top: 40px;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--primary-text-color);
+}
+
+.form-field:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 41px;
+  padding-right: 39px;
+}
+
+
+
+.form-area:hover ,
+.form-area:focus {
+  fill: var(--accent-color);
+}
+
+.form-input{
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input:hover ,
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-pic:hover + .form-input ,
+.form-pic:focus + .form-input {
+  border: 1px solid var(--accent-color);
   
 }
+
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+  margin-right: auto;
+  margin-bottom: 4px;
+}
+
+.form-pic {
+  position: absolute;
+  top: 50%;
+  left: 53px;
+}
+
+.form-textarea {
+
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  /* width: 20px;
+  height: 20px; */
+  margin-top: 18px;
+  margin-bottom: 32px;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  font-family: inherit;
+  text-decoration: underline;
+  
+}
+
+.btn-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 55px;
+}
+
+.btn-submit:hover ,
+.btn-submit:focus {
+  background-color: #188CE8;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 
 /* section advantages*/
 
