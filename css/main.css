@@ -310,10 +310,12 @@ pointer-events: none;
   border : 1px solid rgba(0, 0, 0, 0.1); ;
   border-radius: 50%;
   background-color: var(--white);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .pic-modal {
   fill: rgba(0, 0, 0, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover .pic-modal,
@@ -350,7 +352,9 @@ pointer-events: none;
   padding-right: 39px;
 }
 
-
+.form-area {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .form-area:hover ,
 .form-area:focus {
@@ -366,6 +370,8 @@ pointer-events: none;
   
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover ,
@@ -401,6 +407,12 @@ pointer-events: none;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:hover ,
+.form-textarea:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .checkbox-label {
@@ -423,6 +435,7 @@ pointer-events: none;
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  transition:  2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox {
@@ -438,6 +451,8 @@ pointer-events: none;
   background-origin: content-box;
   background-repeat: no-repeat;
   padding-top: 1px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 
 
 }
@@ -449,6 +464,7 @@ pointer-events: none;
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 
 }
@@ -472,6 +488,7 @@ pointer-events: none;
   border: none;
   padding: 10px 55px;
   margin-bottom: 40px;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit:hover ,
@@ -851,6 +868,76 @@ background-color: var(--white);
 .pic-join {
   fill: var(--white); 
  }
+
+ .footer-mailing {
+   display: flex;
+ }
+
+ .footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+ }
+ 
+.footer-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 20px;
+} 
+
+.footer-textarea {
+  width: 358px;
+  height: 50px;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px 15px 16px;
+  color: var(--white);
+
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-top: auto;
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white);
+  padding-left: 29px;
+  padding-right: 10px;
+}
+
 
  
 /* страница 2 */
