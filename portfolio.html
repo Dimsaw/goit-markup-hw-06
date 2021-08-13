@@ -362,20 +362,26 @@
             </li>
           </ul>
         </div>
-         <div class="footer-mailing">
+        <form class="footer-mailing">
           <div class="footer-form">
-              <label for="comment" class="footer-label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-              <textarea class="footer-textarea" name="comment" id="comment"  
-              placeholder="E-mail" ></textarea>  
+            <label for="mailing" class="footer-label"
+              >ПОДПИШИТЕСЬ НА РАССЫЛКУ</label
+            >
+            <textarea
+              class="footer-textarea"
+              name="mailing"
+              id="mailing"
+              placeholder="E-mail"
+            ></textarea>
           </div>
 
-          <button class="subscribe-btn"> <span class="subscribe-text">Подписаться</span> 
+          <button type="submit" class="subscribe-btn">
+            <span class="subscribe-text">Подписаться</span>
             <svg class="subscribe-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send-fly"></use>
             </svg>
           </button>
-
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
